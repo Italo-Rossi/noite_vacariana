@@ -13,7 +13,7 @@
 <body>
     <!-- HEADER PRINCIPAL -->
     <header id="menu_principal" >
-        <div class="container"  style="">
+        <div class="container">
             <div class="row">
                 <div class="col">
                   <h1>Noite<br>Vacariana</h1>
@@ -24,7 +24,7 @@
                         <a class="nav-link" href="../index.html" style="color: white;">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link " href="eventos.html" style="color: white;"">Eventos</a>
+                        <a class="nav-link " href="eventos.html" style="color: white;">Eventos</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="locais.html" style="color: white;">Locais</a>
@@ -35,38 +35,45 @@
                 </ul>
                 </div>
                <div class="col justify-content-center" style="padding: 3%;" >
-                  <a  id="botao-inscreva-se" class="btn btn-light active" href="inscreva-se.html" role="button" style="background-color: white; color: #191970;">Inscreva-se</a>
+                  <a  id="botao-inscreva-se" class="btn btn-light active" href="inscreva-se.html" role="button" style="background-color: silver; color: #191970; box-shadow: ">Inscreva-se</a>
                 </div>
         </div>
     </header>
     <section id="section_geral">
     
     <div class="container-sm" id="container_geral">
-            <!-- BOTÃO INSCRIÇÃO EVENTOS -->
-               <h1 class="justify-content-center" style="padding: 1.5%; margin: 0px 2% 2%; border-bottom: 2px solid white">Inscrição de usuário</h1>
-            <!-- FORMULARIO -->
-            <div id="login">
-
-                <!-- LOGIN -->
-
-                <form class="form-inline">
+            <!-- INSCRIÇÃO EVENTOS -->
+               <h1 class="justify-content-center" style="padding: 1.5%; margin: 0px 2% 2% 0px; border-bottom: 2px solid white">Inscrição de usuário</h1>
+            
+            <!-- FORMULARIOs -->
+            <!-- Seção de  LOGIN -->
+            <section id="secao_login">              
+                <form class="form-inline" method="post" >
                     <div class="form-group mb-2">
-                        <label for="staticEmail2" class="sr-only">E-mail</label>
-                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="E-mail">
+                        <label for="login_email" class="sr-only" required>E-mail</label>
+                        <input type="email" class="form-control" id="login_email" placeholder="E-mail" required="">
                     </div>
-                     <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputPassword2" class="sr-only">Senha</label>
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Senha">
-                      </div>
-                      
-                      <button type="submit" class="btn btn-primary mb-2">ENTRAR</button>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="login_senha" class="sr-only" required>Senha</label>
+                        <input type="password" class="form-control" id="login_senhas" placeholder="Senha" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">ENTRAR</button>
                 </form>
-            </div>
-            <div>
+            </section>
 
+
+            <!-- Seção de cadastro -->
+            <section id="secao_cadastro">
+            <div class="input-group" id>
+                <div class="input-group-prepend" >
+                    <span class="input-group-text">Nome e sobrenome</span>
+                </div>
+                <input type="text" aria-label="Primeiro nome" class="form-control" id="cadastro_primeiro_nome" required>
+                <input type="text" aria-label="Segundo nome" class="form-control" id="cadastro_segundo_nome">
+            </div>
                 <!-- PRIMEIRA COLUNA -->
                 <div id="coluna_ONE">
-                    <input type="" name="" placeholder="Digite seu nome completo">
+                    <input name="" placeholder="Digite seu nome completo">
 
                     <br>
 
@@ -114,6 +121,7 @@
                 <button type="submit" class="btn btn-primary mb-2" id="fim">INSCREVER-SE</button>
             </div>
     </div>      
+            </section>
     </section>
     <footer style="" id="footer">
             <div class="container">
