@@ -8,10 +8,6 @@
 	margin-right: auto;
 	width: 70%;
 }
-section#section_geral {
-	background-image: url("../imagens/ceu-estrelado.png") ;
-	background-attachment: fixed;
-}
 #card_1, #card_3 {
 	width: 30%;
 	margin-right: auto;
