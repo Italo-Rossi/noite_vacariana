@@ -4,14 +4,16 @@
  	/*background-image: linear-gradient(#191970,(#1919 ); */
 
  	color: #aab5b8;
+ 	text-shadow: black; 
  	width: 100%;
 }
 #footer {
-	background-image: url("../imagens/imagem-pessoas.png");	
+		
 }
 section#section_geral {
 	background-image: url("../imagens/plano_fundo.png") ;
 	background-attachment: fixed;
+	color: #aab5b8;
 }
 
 #nav_principal{
@@ -24,5 +26,14 @@ section#section_geral {
 	float: left;
 }
 #botao-inscreva-se {
-	;
+	border: 1px solid red;
+}
+footer {
+	background-image: url("../imagens/imagem-pessoas.png");
+	color: #aab5b8;
+}
+h2#texto_footer {
+
+	margin: 1.5%;
+	padding: 1%;
 }

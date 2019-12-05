@@ -3,90 +3,60 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="login.css">
-    <title>Browser</title>
+    <!-- Estilizações personalizadas -->
+    <link rel="stylesheet" type="text/css" href="../css/estilizacao_geral.css">    
+    
+
+
+    <title></title>
 </head>
 <body>
-
-    <!-- BOTÃO INSCRIÇÃO EVENTOS -->
-    <header>
-        <button type="button" class="btn btn-primary btn-sm" id="ins_event">INSCRIÇÃO DE EVENTO</button>
+    <!-- HEADER PRINCIPAL -->
+    <header id="menu_principal" >
+        <div class="container"  style="">
+            <div class="row">
+                <div class="col">
+                  <h1>Noite<br>Vacariana</h1>
+                </div>
+                <div class="col-6" style="padding: 3%;">
+                  <ul class="nav nav-pills nav-fill justify-content-center">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html" style="color: white;">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="eventos.html"style="background-color: white; color: #191970;">Eventos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="locais.html" style="color: white;">Locais</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contato.html" style="color: white;">Contato</a>
+                      </li>
+                </ul>
+                </div>
+               <div class="col justify-content-center" style="padding: 3%;" >
+                  <a  id="botao-inscreva-se" class="btn btn-light" href="inscreva-se.html" role="button">Inscreva-se</a>
+                </div>
+        </div>
     </header>
+    <section id="section_geral">
+    
+    <div class="container-sm" id="container_geral">
+            <!-- BOTÃO INSCRIÇÃO EVENTOS -->
+               <h1 class="justify-content-center" style="padding: 1.5%; margin: 0px 2% 2%; border-bottom: 2px solid white">Eventos</h1>
+            <!-- FORMULARIO -->
+            
 
-    <!-- FORMULARIO -->
-    <div id="login">
+                <!-- LOGIN -->
 
-        <!-- LOGIN -->
-
-        <form class="form-inline">
-            <div class="form-group mb-2">
-                <label for="staticEmail2" class="sr-only">E-mail</label>
-                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="E-mail">
+            
+    </div>      
+    </section>
+    <footer style="" id="footer">
+            <div class="container">
+                <div class="row justify-content-center">
+                <h2 id="texto_footer">Noite Vacariana</h2>
             </div>
-             <div class="form-group mx-sm-3 mb-2">
-                <label for="inputPassword2" class="sr-only">Senha</label>
-                <input type="password" class="form-control" id="inputPassword2" placeholder="Senha">
-              </div>
-              
-              <button type="submit" class="btn btn-primary mb-2">ENTRAR</button>
-        </form>
-    </div>
-
-    <h3>INSCRIÇÃO DE USUÁRIO</h3>
-
-    <!-- INSCRIÇÃO USER -->
-
-    <div>
-
-        <!-- PRIMEIRA COLUNA -->
-        <div id="coluna_ONE">
-            <input type="" name="" placeholder="Digite seu nome completo">
-
-            <br>
-
-            <input type="password" name="" placeholder="Digite sua senha" id="ssss">
-
-            <br>
-            <br>
-
-            Data de Nascimento:
-
-            <br>
-
-            <input type="date" name="" id="ssss">
-        </div>
-
-        <!-- SEGUNDA COLUNA -->
-
-        <div id='coluna_TWO'>
-            <input type="E-mail" name="" placeholder="E-mail">
-
-            <br>
-            <br>
-
-            <input type="password" name="" placeholder="Confirme sua senha">
-
-            <br>
-            <br>
-
-            Gênero:
-
-            <fieldset>
-
-                <input type="radio" name="gene"> Feminino
-
-                <br>
-
-                <input type="radio" name="gene"> Masculino
-
-                <br>
-
-                <input type="radio" name="gene"> Outro
-            </fieldset>
-        </div>
-
-        <button type="submit" class="btn btn-primary mb-2" id="fim">INSCREVER-SE</button>
-    </div>
-
+    </footer>
 </body>
 </html>
