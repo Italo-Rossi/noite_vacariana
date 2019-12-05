@@ -37,4 +37,11 @@ button#fim{
 }
 
 /* Estilização para os formulários */
-
+.campo_form {
+    margin: 20px 0px 1%;
+    background-color: silver;
+}
+#container_nomesobrenome {
+   margin-bottom: 2%;
+   
+}

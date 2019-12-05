@@ -42,86 +42,46 @@
     <section id="section_geral">
     
     <div class="container-sm" id="container_geral">
-            <!-- INSCRIÇÃO EVENTOS -->
-               <h1 class="justify-content-center" style="padding: 1.5%; margin: 0px 2% 2% 0px; border-bottom: 2px solid white">Inscrição de usuário</h1>
-            
+        <!-- INSCRIÇÃO EVENTOS -->
+            <h1 class="justify-content-center" style="padding: 1.5%; margin: 0px 2% 2% 0px; border-bottom: 2px solid white">Inscrição de usuário</h1>
             <!-- FORMULARIOs -->
-            <!-- Seção de  LOGIN -->
-            <section id="secao_login">              
-                <form class="form-inline" method="post" >
-                    <div class="form-group mb-2">
-                        <label for="login_email" class="sr-only" required>E-mail</label>
-                        <input type="email" class="form-control" id="login_email" placeholder="E-mail" required="">
-                    </div>
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="login_senha" class="sr-only" required>Senha</label>
-                        <input type="password" class="form-control" id="login_senhas" placeholder="Senha" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-2">ENTRAR</button>
-                </form>
-            </section>
-
-
-            <!-- Seção de cadastro -->
-            <section id="secao_cadastro">
-            <div class="input-group" id>
-                <div class="input-group-prepend" >
-                    <span class="input-group-text">Nome e sobrenome</span>
+        <!-- Seção de  LOGIN -->
+        <section id="secao_login">              
+            <form class="form-inline" method="post" >
+                <legend>Login</legend>
+                <div class="form-group mb-2">
+                    <label for="login_email" class="sr-only">E-mail</label>
+                    <input type="email" class="form-control" id="login_email" placeholder="E-mail" required="">
                 </div>
-                <input type="text" aria-label="Primeiro nome" class="form-control" id="cadastro_primeiro_nome" required>
-                <input type="text" aria-label="Segundo nome" class="form-control" id="cadastro_segundo_nome">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="login_senha" class="sr-only" >Senha</label>
+                    <input type="password" class="form-control" id="login_senha" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">ENTRAR</button>
+            </form>
+        </section>
+    <!-- Seção de cadastro -->
+    <section id="secao_cadastro">
+    <form class="form" method="post">
+        <legend >Cadastro</legend>
+        <div class="input-group" id="container_nomesobrenome">
+            <div class="input-group-prepend" class="campo_form" >
+                <span class="input-group-text">Nome e sobrenome</span>
             </div>
-                <!-- PRIMEIRA COLUNA -->
-                <div id="coluna_ONE">
-                    <input name="" placeholder="Digite seu nome completo">
-
-                    <br>
-
-                    <input type="password" name="" placeholder="Digite sua senha" id="ssss">
-
-                    <br>
-                    <br>
-
-                    Data de Nascimento:
-
-                    <br>
-
-                    <input type="date" name="" id="ssss">
-                </div>
-
-                <!-- SEGUNDA COLUNA -->
-
-                <div id='coluna_TWO'>
-                    <input type="E-mail" name="" placeholder="E-mail">
-
-                    <br>
-                    <br>
-
-                    <input type="password" name="" placeholder="Confirme sua senha">
-
-                    <br>
-                    <br>
-
-                    Gênero:
-
-                    <fieldset>
-
-                        <input type="radio" name="gene"> Feminino
-
-                        <br>
-
-                        <input type="radio" name="gene"> Masculino
-
-                        <br>
-
-                        <input type="radio" name="gene"> Outro
-                    </fieldset>
-                </div>
-
-                <button type="submit" class="btn btn-primary mb-2" id="fim">INSCREVER-SE</button>
-            </div>
-    </div>      
-            </section>
+            <input type="text" aria-label="Primeiro nome" class="form-control" id="cadastro_nome" required>
+            <input type="text" aria-label="Segundo nome" class="form-control" id="cadastro_sobrenome" required>
+        </div>
+        <div class="form-group">
+            <label for="cadastro_email">Email</label>
+            <input type="email" class="form-control" id="cadastro_email" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+            <label for="cadastro_senha">Senha</label>
+            <input type="password" class="form-control" id="cadastro_senha" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2" style="margin-right: auto">Inscreva-se</button>
+    </form>  
+        </section>
     </section>
     <footer style="" id="footer">
             <div class="container">
