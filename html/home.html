@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta lang="pt">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <!-- Linkagem CSS do Bootstrap -->
+	<!-- Abaixo linkagem JS do bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<!-- Links CSS personalizado -->
+	<link rel="stylesheet" type="text/css" href="../css/estilizacao_geral.css">
+</head>
+<body>
+	<header style="background-color: #191970; color: white; width: 100%; ">
+		<div class="container" style="padding: 1.5%;">
+			<div class="row">
+			    <div class="col">
+			      <h1>Noite<br>Vacariana</h1>
+			    </div>
+			    <div class="col-6" style="padding: 3%;">
+			      <ul class="nav nav-pills nav-fill justify-content-center">
+					  <li class="nav-item">
+					    <a class="nav-link active" href="home.html" style="background-color: white; color: #191970;">Home</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="eventos.html" style="color: white;">Eventos</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="locais.html" style="color: white;">Locais</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="contato.html" style="color: white;">Contato</a>
+					  </li>
+				</ul>
+			    </div>
+			    <div class="col justify-content-center" style="padding: 3%;">
+			      <a class="btn btn-light" href="#" role="button">Inscreva-se</a>
+			    </div>
+		</div>
+	</header>
+	<section id="section_geral">
+	<div class="container-sm" id="container_geral">
+		<div id="carrocel_pagina_inicial" class="carousel slide" data-ride="carousel"> <!-- Abre a div do carrocel --> 
+			 <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			  </ol>
+			 <div class="carousel-inner">
+			    <div class="carousel-item active" id="1">
+			        <img src="../imagens/festa.jpg" class="d-block w-100" alt="">
+			        <div class="carousel-caption d-none d-md-block">
+			          <h5>Noite Vacaria</h5>
+			          <p>Noite Vacariana é um projeto bem bacana</p>
+			        </div>
+			    </div>
+			    <div class="carousel-item" id="2">
+			        <img src="../imagens/bar.jpg" class="d-block w-100" alt="...">
+			        <div class="carousel-caption d-none d-md-block">
+			            <h5>Second slide label</h5>
+			        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			        </div>
+			    </div>
+			    <div class="carousel-item" id="3">
+			        <img src="../imagens/balada.jpg" class="d-block w-100" alt="...">
+			        <div class="carousel-caption d-none d-md-block">
+				        <h5>Third slide label</h5>
+				        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+		            </div>
+			    </div>
+			  </div>
+			  <!-- Botões para o carrocel -->
+			  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>	
+		</div><!-- Fecha a div do carrocel -->
+
+		<div class="card" id="card_1">
+			<img src="../imagens/calendario.jpg" class="card-img-top" alt="">
+			<div class="card-body">
+			    <h4 class="card-title">Próximos eventos</h4>
+			    <p class="card-text">Não perca os próximos eventos</p>
+			    <a href="#" class="btn btn-primary">Saiba mais</a>
+			</div>
+		</div>
+
+		<div class="card" id="card_2">
+			<img src="../imagens/open.jpg" class="card-img-top" alt="">
+			<div class="card-body">
+			    <h4 class="card-title">Horários de atendimento</h4>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Saiba mais</a>
+			</div>
+		</div>
+
+		<div class="card" id="card_3">
+			<img src="../imagens/acontecendo.jpg" class="card-img-top" alt="">
+			<div class="card-body">
+			    <h4 class="card-title">Acontecento</h4>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Saiba mais</a>
+			</div>
+		</div>
+	<!-- Fecha a div do container geral -->
+	</div>
+	<footer style="background-color: #191970; color: white; width: 100%; margin-top: 2.5%;">
+		<div class="container">
+			<div class="row justify-content-center">
+					<h2 style="margin: 1.5%; padding: 1%;">Noite Vacariana</h2>
+		</div>
+	</footer>
+	</section>
+</body>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+#container_geral {
+	
+}
+#carrocel_pagina_inicial {
+	padding-top: 5%; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+section#section_geral {
+	background-image: url("../imagens/ceu-estrelado.png") ;
+	background-attachment: fixed;
+}
+#card_1, #card_3 {
+	width: 30%;
+	margin-right: auto;
+	margin-top: 2%;
+}
+#card_2 {
+	width: 30%;
+	margin-left: auto;
+	
+}
